@@ -13,7 +13,6 @@ class RepositoriesController < ApplicationController
     @html_url = json['items'][0]['html_url']
     @description = json['items'][0]['description']
     @name = json['items'][0]['name']
-    byebug
     render 'search'
   end
 end
