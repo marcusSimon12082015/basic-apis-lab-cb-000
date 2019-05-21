@@ -7,6 +7,7 @@ class RepositoriesController < ApplicationController
       req.params['q'] = params[:query]
     end
     byebug
+    render search
   end
 
   def github_search
