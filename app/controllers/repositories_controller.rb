@@ -6,6 +6,6 @@ class RepositoriesController < ApplicationController
 
   def github_search
     pry
-    @resp = Faraday.get 'https://api.github.com/search/repositories',{:q => }
+    @resp = Faraday.get 'https://api.github.com/search/repositories'
   end
 end
