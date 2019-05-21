@@ -5,7 +5,7 @@ class RepositoriesController < ApplicationController
   end
 
   def github_search
-    pry
+    byebug
     @resp = Faraday.get 'https://api.github.com/search/repositories'
   end
 end
